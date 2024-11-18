@@ -1,10 +1,12 @@
 public class GameDemo {
     public static void main(String[] args) {
         Player player = new Player("Hero", 10, 20, 100, 3);
-        Monster monster = new Monster("Goblin", 5, 15, 50, 2, "Green");
+        Monster monster = new Monster("Goblin", 5, 15, 50, 2, "Red");
 
         // Display initial status
+        System.out.println("==========================");
         System.out.println(player.Name + " encounters " + monster.Name);
+        System.out.println("==========================");
 
         // Monster attacks player
         monster.TakeDamage(20);

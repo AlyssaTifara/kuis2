@@ -13,6 +13,7 @@ abstract class DamageableObject extends GameObject {
 
     public void TakeDamage(int damage) {
         Health -= damage;
+        System.out.println("--------------------------------------------");
         System.out.println(Name + " took " + damage + " damage. Remaining health: " + Health);
         if (IsDead()) {
             OnKilled();
